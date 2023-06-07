@@ -4,11 +4,12 @@
     {
         static void Main(string[] args)
         {
-           // vowel();
-            months();
+            // vowel();
+            //  months();
+            letter();
         }
-         
-        
+
+
         //static void vowel()
         //{
         //    Console.Write("Please Choose one of a vowel character (a,e,i,o,u): ");
@@ -43,60 +44,90 @@
         //    }
 
 
-             static void months()
+        // static void months()
+        //{
+        //    Console.Write("Enter number of month: ");
+        //    int month = Convert.ToInt32(Console.ReadLine());
+        //    switch (month)
+        //    {
+        //        case 1:
+        //            Console.WriteLine("January");
+        //            break;
+
+        //        case 2:
+        //            Console.WriteLine("February");
+        //            break;
+
+        //        case 3:
+        //            Console.WriteLine("March");
+        //            break;
+
+        //        case 4:
+        //            Console.WriteLine("April");
+        //            break;
+
+        //        case 5:
+        //            Console.WriteLine("May");
+        //            break;
+
+        //        case 6:
+        //            Console.WriteLine("June");
+        //            break;
+
+        //        case 7:
+        //            Console.WriteLine("July");
+        //            break;
+
+        //        case 8:
+        //            Console.WriteLine("August");
+        //            break;
+
+        //        case 9:
+        //            Console.WriteLine("September");
+        //            break;
+
+        //        case 10:
+        //            Console.WriteLine("October");
+        //            break;
+
+        //        case 11:
+        //            Console.WriteLine("November");
+        //            break;
+
+        //        case 12:
+        //            Console.WriteLine("December");
+        //            break;
+        //    }
+        //}
+
+        static void letter()
+        {
+            Console.Write("Enter letter (A,B,C,D,F): ");
+            char le = Convert.ToChar(Console.ReadLine());
+            switch (le)
             {
-                Console.Write("Enter number of month: ");
-                int month = Convert.ToInt32(Console.ReadLine());
-                switch (month)
-                {
-                    case 1:
-                        Console.WriteLine("January");
-                        break;
+                case 'a' or 'A':
+                    Console.WriteLine("Excellent");
+                    break;
 
-                    case 2:
-                        Console.WriteLine("February");
-                        break;
+                case 'b' or 'B':
+                    Console.WriteLine("Very Good");
+                    break;
 
-                    case 3:
-                        Console.WriteLine("March");
-                        break;
+                case 'c' or 'C':
+                    Console.WriteLine("Good");
+                    break;
 
-                    case 4:
-                        Console.WriteLine("April");
-                        break;
+                case 'd' or 'D':
+                    Console.WriteLine("pass");
+                    break;
 
-                    case 5:
-                        Console.WriteLine("May");
-                        break;
+                case 'f' or 'F':
+                    Console.WriteLine("fail");
+                    break;
 
-                    case 6:
-                        Console.WriteLine("June");
-                        break;
 
-                    case 7:
-                        Console.WriteLine("July");
-                        break;
-
-                    case 8:
-                        Console.WriteLine("August");
-                        break;
-
-                    case 9:
-                        Console.WriteLine("September");
-                        break;
-
-                    case 10:
-                        Console.WriteLine("October");
-                        break;
-
-                    case 11:
-                        Console.WriteLine("November");
-                        break;
-
-                    case 12:
-                        Console.WriteLine("December");
-                        break;
-                }
             }
         }
     }
+}
