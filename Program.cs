@@ -1,4 +1,8 @@
-﻿namespace function
+﻿using System.Collections.Generic;
+using System.Diagnostics.Metrics;
+using System.Reflection.Metadata;
+
+namespace function
 {
     internal class Program
     {
@@ -6,8 +10,14 @@
         {
             // vowel();
             //  months();
-            letter();
+            //letter();
+             week();
+           
+           
         }
+
+        //Q1: Create a program that takes a character as input and prints "Vowel"
+        //if the character is a vowel (a, e, i, o, u) and "Consonant" if it is a consonant.
 
 
         //static void vowel()
@@ -43,6 +53,10 @@
         //            break;
         //    }
 
+
+
+        //Q2: Write a program that takes a month number (1-12) as input and prints the corresponding month name.
+        //For example, if the input is 3, the program should print "March."	
 
         // static void months()
         //{
@@ -100,34 +114,97 @@
         //    }
         //}
 
-        static void letter()
-        {
-            Console.Write("Enter letter (A,B,C,D,F): ");
-            char le = Convert.ToChar(Console.ReadLine());
-            switch (le)
+
+
+
+        //Q3: Create a program that takes a grade (A, B, C, D, F) as input and prints the corresponding message.
+        //For example, if the input is 'A', the program should print "Excellent."
+
+        //static void letter()
+        //{
+        //    Console.Write("Enter letter (A,B,C,D,F): ");
+        //    char le = Convert.ToChar(Console.ReadLine());
+        //    switch (le)
+        //    {
+        //        case 'a' or 'A':
+        //            Console.WriteLine("Excellent");
+        //            break;
+
+        //        case 'b' or 'B':
+        //            Console.WriteLine("Very Good");
+        //            break;
+
+        //        case 'c' or 'C':
+        //            Console.WriteLine("Good");
+        //            break;
+
+        //        case 'd' or 'D':
+        //            Console.WriteLine("pass");
+        //            break;
+
+        //        case 'f' or 'F':
+        //            Console.WriteLine("fail");
+        //            break;
+
+
+        //    }
+        //}
+
+
+        //Q4: Write a program that takes a day number (1-7) as input and prints the corresponding day of the week. For example,
+        //if the input is 2, the program should print "Tuesday."
+        static void week()
             {
-                case 'a' or 'A':
-                    Console.WriteLine("Excellent");
-                    break;
+                Console.Write("Enter number of day: ");
+                int day = Convert.ToInt32(Console.ReadLine());
+                switch (day)
+                {
+                    case 1:
+                        Console.WriteLine("Sunday");
+                        week();
+                        break;
 
-                case 'b' or 'B':
-                    Console.WriteLine("Very Good");
-                    break;
+                    case 2:
+                        Console.WriteLine("Monday");
+                        week();
+                        break;
 
-                case 'c' or 'C':
-                    Console.WriteLine("Good");
-                    break;
+                    case 3:
+                        Console.WriteLine("Tuesday");
+                        week();
+                        break;
 
-                case 'd' or 'D':
-                    Console.WriteLine("pass");
-                    break;
+                    case 4:
+                        Console.WriteLine("Wednesday");
+                        week();
+                        break;
 
-                case 'f' or 'F':
-                    Console.WriteLine("fail");
-                    break;
+                    case 5:
+                        Console.WriteLine("Thursday");
+                        week();
+                        break;
 
+                    case 6:
+                        Console.WriteLine("Friday");
+                        week();
+                        break;
+
+                    case 7:
+                        Console.WriteLine("Saturday");
+                        week();
+                        break;
+
+                    default:
+                        Console.WriteLine("Erorr");
+                        week();
+                        break;
+                }
 
             }
+
         }
+
     }
-}
+
+
+
